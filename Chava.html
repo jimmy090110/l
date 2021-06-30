@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Chava</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <style>
+        body {
+            background-color: pink;
+        }
+    </style>
+    <script>
+        function accionParaCuandoEllaDigaQueSi(){
+            alert('ahora ya somos chavo, loviu mi señora :3 jajaja  ');
+        }
+
+        function mueveElBoton(){
+            width = window.innerWidth;
+            height = window.innerHeight;
+
+            newWidth = (Math.random() * width);
+            newHeight = (Math.random() * height);
+
+            document.getElementById('btnNo').style.position = "absolute";
+            document.getElementById('btnNo').style.left = newWidth + "px";
+            document.getElementById('btnNo').style.top = newHeight + "px";
+            
+
+        }
+    </script>
+</head>
+<body>
+    <h3> ¿Quieres ser mi chava?</h3>
+    <input type="button" onclick="accionParaCuandoEllaDigaQueSi()" id="btnSi" value="Si,amor de mi vida pero si tenemos 10 hijos :3" />
+    <input type="button" id="btnNo" onmouseover="mueveElBoton()" value="Si mi amorcito :3 " />
+    <img src="burro1.png" width="200">
+</body>
+</html>
